@@ -11,7 +11,7 @@ $attrs = $element['attrs'];
 	<div class="uk-margin"><?= $element['field_content'] ?></div>
 
 	<div class="uk-margin">
-		<progress id="<?= $uniqid = uniqid('progress-'); ?>" class="uk-progress" value="<?= $element['field_value'] ?>" max="<?= $element['field_max'] ?>" data-stop="<?= $element['field_stop'] ?>"><?= $element['field_stop'] ?> %</progress>
+		<progress id="<?= $uniqid = uniqid('progress-'); ?>" class="uk-progress" value="<?= $element['field_value'] ?>" max="<?= $element['field_max'] ?>" data-stop="<?= $element['field_stop'] ?>"><?= $element['field_stop'] ?>/<?= $element['field_max'] ?></progress>
 		<script>
 			UIkit.util.ready(function() {
 
