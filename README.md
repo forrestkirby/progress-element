@@ -39,6 +39,8 @@ Note that this is not an official YOOtheme product.
 
 ## Hints
 
+The progress bar color can be set in the Page Builder at _STYLE > Progress > BAR > Background_.
+
 While developing custom elements it might appear to you that changes to the code do not come into effect. If that is the case, try to force a browser refresh while within the Page Builder using \[Ctrl+F5\] (Windows) or \[Cmd+R\] (macOS).
 
 ## Links
