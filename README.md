@@ -1,6 +1,6 @@
 # Progress Element
 
-A custom element for the YOOtheme Pro Page Builder to render the UIkit 3 [progress component](https://getuikit.com/docs/progress)
+A custom element for the YOOtheme Pro Page Builder to render the UIkit 3 [Progress component](https://getuikit.com/docs/progress)
 
 Copyright (C) 2018 [forrestkirby](https://github.com/forrestkirby)
 
