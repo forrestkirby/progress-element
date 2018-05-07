@@ -47,3 +47,9 @@ While developing custom elements it might appear to you that changes to the code
 - [YOOtheme Pro Documentation: Child Themes](https://yootheme.com/support/yootheme-pro/joomla/child-themes)
 - [YOOtheme Pro Documentation: Custom Elements](https://yootheme.com/support/yootheme-pro/joomla/custom-elements)
 - [YOOtheme Support](https://yootheme.com/support)
+
+## Screenshots
+
+![Image](https://pionte.ch/yootheme/max/images/tutorial-progress-2.jpg)
+
+![Image](https://pionte.ch/yootheme/max/images/tutorial-progress-3.jpg)
