@@ -48,6 +48,7 @@ While developing custom elements it might appear to you that changes to the code
 - [YOOtheme Pro Documentation: Child Themes](https://yootheme.com/support/yootheme-pro/joomla/child-themes)
 - [YOOtheme Pro Documentation: Custom Elements](https://yootheme.com/support/yootheme-pro/joomla/custom-elements)
 - [YOOtheme Support](https://yootheme.com/support)
+- [Toggle Element](https://github.com/forrestkirby/toggle-element)
 
 ## Screenshots
 
