@@ -3,7 +3,7 @@
 return [
 
 	// Module name
-	'name' => 'yootheme/progress',
+	'name' => 'forrestkirby/progress',
 
 	// How this element is referenced inside the builder
 	'builder' => 'progress',
@@ -15,10 +15,9 @@ return [
 
 	'events' => [
 
-		'theme.admin' => function () {
-			// Load the JavaScript that creates the elements settings in the builder
-			$this->app->scripts->add('builder-progress', "{$this->path}/progress.js", 'customizer-builder');
-	}
+		'builder.init' => function ($elements, $builder) {
+			$elements->set('progress', json_decode(file_get_contents("{$this->path}/element.json"), true));
+		}
 
 	],
 
