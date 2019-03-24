@@ -1,8 +1,8 @@
 {
 	"name": "progress",
 	"title": "Progress",
-	"icon": "${THEME}_child/builder/progress/icon.svg",
-	"iconSmall": "${THEME}_child/builder/progress/icon-small.svg",
+	"icon": "${url:images/icon.svg}",
+	"iconSmall": "${url:images/iconSmall.svg}",
 	"element": true,
 	"container": true,
 	"width": 600,
@@ -13,6 +13,10 @@
 		"field_stop": 70,
 		"field_animation_step": 1,
 		"field_animation_speed": 10
+	},
+	"templates": {
+		"render": "./templates/template.php",
+		"content": "./templates/content.php"
 	},
 	"fields": {
 		"field_content": {
@@ -49,9 +53,10 @@
 			"description": "Set the animation speed in ms",
 			"type": "number"
 		},
-		"name": "${NAME}",
-		"id": "${ID}",
-		"class": "${CLS}",
+		"name": "${builder:name}",
+		"status": "${builder:status}",
+		"id": "${builder:id}",
+		"class": "${builder:cls}",
 		"css": {
 			"label": "CSS",
 			"description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>",
