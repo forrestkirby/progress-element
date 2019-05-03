@@ -1,0 +1,115 @@
+{
+	"name": "progress",
+	"title": "Progress",
+	"icon": "${url:images/icon.svg}",
+	"iconSmall": "${url:images/iconSmall.svg}",
+	"element": true,
+	"container": true,
+	"width": 500,
+	"defaults": {
+		"field_content": "Lorem ipsum dolor sit amet",
+		"field_value": 0,
+		"field_max": 100,
+		"field_stop": 70,
+		"field_animation_step": 1,
+		"field_animation_speed": 10
+	},
+	"templates": {
+		"render": "./templates/template.php",
+		"content": "./templates/content.php"
+	},
+	"fields": {
+		"field_content": {
+			"label": "Content",
+			"description": "Content that will be displayed above the progress bar",
+			"type": "editor",
+			"attrs": {
+				"rows": 10,
+				"placeholder": "Enter text..."
+			}
+		},
+		"field_value": {
+			"label": "Value",
+			"description": "Set the initial value of the progress bar",
+			"type": "number"
+		},
+		"field_max": {
+			"label": "Max",
+			"description": "Set the maximum value of the progress bar",
+			"type": "number"
+		},
+		"field_stop": {
+			"label": "Stop",
+			"description": "Set the value where the animation should stop",
+			"type": "number"
+		},
+		"field_animation_step": {
+			"label": "Animation Step Size",
+			"description": "Set the size of an animation step",
+			"type": "number"
+		},
+		"field_animation_speed": {
+			"label": "Animation Speed",
+			"description": "Set the animation speed in ms",
+			"type": "number"
+		},
+		"position": "${builder:position}",
+		"position_left": "${builder:position_left}",
+		"position_right": "${builder:position_right}",
+		"position_top": "${builder:position_top}",
+		"position_bottom": "${builder:position_bottom}",
+		"position_z_index": "${builder:position_z_index}",
+		"name": "${builder:name}",
+		"status": "${builder:status}",
+		"id": "${builder:id}",
+		"class": "${builder:cls}",
+		"css": {
+			"label": "CSS",
+			"description": "Enter your own custom CSS. The following selectors will be prefixed automatically for this element: <code>.el-element</code>",
+			"type": "editor",
+			"editor": "code",
+			"mode": "css",
+			"attrs": {
+				"debounce": 500
+			}
+		}
+	},
+	"fieldset": {
+		"default": {
+			"type": "tabs",
+			"fields": [
+				{
+					"title": "Content",
+					"fields": [
+						"field_content"
+					]
+				},
+				{
+					"title": "Settings",
+					"fields": [
+						"field_value",
+						"field_max",
+						"field_stop",
+						"field_animation_step",
+						"field_animation_speed",
+						"position",
+						"position_left",
+						"position_right",
+						"position_top",
+						"position_bottom",
+						"position_z_index"
+					]
+				},
+				{
+					"title": "Advanced",
+					"fields": [
+						"name",
+						"id",
+						"class",
+						"css"
+					]
+				}
+			]
+		}
+	}
+}
