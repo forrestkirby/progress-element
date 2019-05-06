@@ -44,6 +44,7 @@ The progress bar color can be set in the Page Builder at _STYLE > Progress > BAR
 - [YOOtheme Support](https://yootheme.com/support)
 - [Toggle Element](https://github.com/forrestkirby/toggle-element)
 - [Timeline Element](https://github.com/forrestkirby/timeline-element)
+- [Counter Element](https://github.com/forrestkirby/counter-element)
 
 ## Screenshots
 
