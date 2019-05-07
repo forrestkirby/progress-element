@@ -18,17 +18,25 @@ $el = $this->el('div', [
 			UIkit.util.ready(function() {
 
 				var bar = document.getElementById('<?= $uniqid; ?>');
-				
-				var animate = setInterval(function() {
 
-					bar.value += <?= $props['animation_step'] ?>;
+				UIkit.scrollspy(bar, { hidden: false });
 
-					if (bar.value >= bar.getAttribute('data-stop')) {
-						clearInterval(animate);
-					}
+				UIkit.util.on(bar, 'inview', function() {
 
-				}, <?= $props['animation_speed'] ?>);
-				
+					bar = this;
+
+					var animate = setInterval(function() {
+
+						bar.value += <?= $props['animation_step'] ?>;
+
+						if (bar.value >= bar.getAttribute('data-stop')) {
+							clearInterval(animate);
+						}
+
+					}, <?= $props['animation_speed'] ?>);
+
+				});
+
 			});
 		</script>
 	</div>
