@@ -1,5 +1,8 @@
 # Progress Element Changelog
 
+## 0.6
+- Fixed `content.php`
+
 ## 0.5
 - Added position settings from [YOOtheme Pro 1.20 changes](https://yootheme.com/blog/)
 - Changed field names
