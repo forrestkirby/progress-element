@@ -1,5 +1,8 @@
 # Progress Element Changelog
 
+## 0.7
+- Added animation start when in viewport (scrollspy)
+
 ## 0.6
 - Fixed `content.php`
 
