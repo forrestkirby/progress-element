@@ -1,5 +1,8 @@
 # Progress Element Changelog
 
+## 0.8
+- Removed redundant animation settings
+
 ## 0.7
 - Added animation start when in viewport (scrollspy)
 
