@@ -20,6 +20,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 ## Installation
 
 - download and unzip the element package
+- rename `progress-element-master` to `hd-progress`
 - create a [Child Theme](https://yootheme.com/support/yootheme-pro/joomla/child-themes) in your YOOtheme Pro installation and activate the child theme
 - copy all files into the directory `/templates/yootheme_child/builder/` (Joomla!) or `/wp-content/themes/yootheme-child/builder/` (WordPress) of your installation while *child* must be the name of your child theme
 - access the YOOtheme Pro Page Builder, the custom elements should now be available
@@ -45,6 +46,7 @@ The progress bar color can be set in the Page Builder at _STYLE > Progress > BAR
 - [Toggle Element](https://github.com/forrestkirby/toggle-element)
 - [Timeline Element](https://github.com/forrestkirby/timeline-element)
 - [Counter Element](https://github.com/forrestkirby/counter-element)
+- [Flipcard Element](https://github.com/forrestkirby/flipcard-element)
 
 ## Screenshots
 
