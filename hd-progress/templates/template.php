@@ -2,7 +2,9 @@
 
 $el = $this->el('div', [
 
-	//
+	'class' => [
+		'hd-progess',
+	],
 
 ]);
 
@@ -13,32 +15,7 @@ $el = $this->el('div', [
 	<div class="uk-margin"><?= $props['content'] ?></div>
 
 	<div class="uk-margin">
-		<progress id="<?= $uniqid = uniqid('progress-'); ?>" class="uk-progress" value="<?= $props['value'] ?>" max="<?= $props['max'] ?>" data-stop="<?= $props['stop'] ?>"><?= $props['stop'] ?>/<?= $props['max'] ?></progress>
-		<script>
-			UIkit.util.ready(function() {
-
-				var bar = document.getElementById('<?= $uniqid; ?>');
-
-				UIkit.scrollspy(bar, { hidden: false });
-
-				UIkit.util.on(bar, 'inview', function() {
-
-					bar = this;
-
-					var animate = setInterval(function() {
-
-						bar.value += <?= $props['animation_step'] ?>;
-
-						if (bar.value >= bar.getAttribute('data-stop')) {
-							clearInterval(animate);
-						}
-
-					}, <?= $props['animation_speed'] ?>);
-
-				});
-
-			});
-		</script>
+		<progress class="uk-progress" value="<?= $props['value'] ?>" max="<?= $props['max'] ?>" data-stop="<?= $props['stop'] ?>" data-step="<?= $props['animation_step'] ?>" data-speed="<?= $props['animation_speed'] ?>"><?= $props['stop'] ?>/<?= $props['max'] ?></progress>
 	</div>
 
 </div>

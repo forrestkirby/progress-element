@@ -1,4 +1,5 @@
 {
+	"@import": "./element.php",
 	"name": "hd-progress",
 	"title": "HD Progress",
 	"icon": "${url:images/icon.svg}",
