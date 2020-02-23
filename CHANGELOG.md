@@ -1,5 +1,11 @@
 # Progress Element Changelog
 
+## 1.1
+
+### Changed
+
+- moved js to external file
+
 ## 1.0
 
 ### Changed
