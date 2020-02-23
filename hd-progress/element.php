@@ -1,19 +1,21 @@
 <?php
 
-namespace YOOtheme;
+use YOOtheme\Util\Arr;
 
 return [
 
 	'transforms' => [
 
-		'render' => function ($node) {
+		'render' => function ($node, array $params) use ($file) {
 
 			/**
-			 * @var Metadata $metadata
+			 * @var $app
+			 * @var $theme
+			 * @var $builder
 			 */
-			$metadata = app(Metadata::class);
+			extract($params);
 
-			$metadata->set('script:builder-hd-progress', ['src' => Path::get('./js/hd-progress.js'), 'defer' => true]);
+			$app['scripts']->add('builder-hd-progress', "{$file['dirname']}/js/hd-progress.js", [], ['defer' => true]);
 
 		},
 
