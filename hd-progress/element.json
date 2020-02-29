@@ -30,6 +30,7 @@
 			"label": "Content",
 			"description": "Content that will be displayed above the progress bar",
 			"type": "editor",
+			"source": true,
 			"attrs":
 			{
 				"rows": 10,
@@ -40,31 +41,36 @@
 		{
 			"label": "Value",
 			"description": "Set the initial value of the progress bar",
-			"type": "number"
+			"type": "number",
+			"source": true
 		},
 		"max":
 		{
 			"label": "Max",
 			"description": "Set the maximum value of the progress bar",
-			"type": "number"
+			"type": "number",
+			"source": true
 		},
 		"stop":
 		{
 			"label": "Stop",
 			"description": "Set the value where the animation should stop",
-			"type": "number"
+			"type": "number",
+			"source": true
 		},
 		"animation_step":
 		{
 			"label": "Animation Step Size",
 			"description": "Set the size of an animation step",
-			"type": "number"
+			"type": "number",
+			"source": true
 		},
 		"animation_speed":
 		{
 			"label": "Animation Speed",
 			"description": "Set the animation speed in ms",
-			"type": "number"
+			"type": "number",
+			"source": true
 		},
 		"position": "${builder.position}",
 		"position_left": "${builder.position_left}",
@@ -88,6 +94,7 @@
 		"visibility": "${builder.visibility}",
 		"name": "${builder.name}",
 		"status": "${builder.status}",
+		"source": "${builder.source}",
 		"id": "${builder.id}",
 		"class": "${builder.cls}",
 		"css":
