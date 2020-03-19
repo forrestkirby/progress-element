@@ -1,11 +1,5 @@
 # Progress Element Changelog
 
-## 2.0.4
-
-### Removed
-
-- invalid attribute `defer` on style
-
 ## 2.0.0-beta.9
 
 ### Added
