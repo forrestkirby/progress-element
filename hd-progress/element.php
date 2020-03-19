@@ -13,7 +13,7 @@ return [
 			 */
 			$metadata = app(Metadata::class);
 
-			$metadata->set('script:builder-hd-progress', ['src' => Path::get('./js/hd-progress.js')]);
+			$metadata->set('script:builder-hd-progress', ['src' => Path::get('./js/hd-progress.js'), 'defer' => true]);
 
 		},
 
