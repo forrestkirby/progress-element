@@ -1,5 +1,11 @@
 # Progress Element Changelog
 
+## 2.2.0
+
+### Fixed
+
+- dynamic conditions to display element depending on a content field
+
 ## 2.1.0-beta.1
 
 ### Added
