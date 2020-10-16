@@ -50,6 +50,6 @@ The progress bar color can be set in the Page Builder at _STYLE > Progress > BAR
 
 ## Screenshots
 
-![Image](https://herzog-dupont.de/images/tutorials/tutorial-progress-2.jpg)
+![](https://herzog-dupont.de/images/tutorials/tutorial-progress-2.jpg)
 
-![Image](https://herzog-dupont.de/images/tutorials/tutorial-progress-3.jpg)
+![](https://herzog-dupont.de/images/tutorials/tutorial-progress-3.jpg)
