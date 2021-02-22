@@ -2,7 +2,7 @@
 
 A custom element for the YOOtheme Pro Page Builder to render the UIkit 3 [Progress component](https://getuikit.com/docs/progress).
 
-Copyright (C) 2007–2020 YOOtheme GmbH yootheme.com, 2018–2020 forrestkirby github.com/forrestkirby
+Copyright (C) 2007–2021 YOOtheme GmbH yootheme.com, 2018–2021 forrestkirby github.com/forrestkirby
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -18,6 +18,10 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
 
 ## Installation
+
+- install the [Joomla! plugin](https://github.com/forrestkirby/herzogdupont)
+
+*or*
 
 - download and unzip the element package
 - create a [Child Theme](https://yootheme.com/support/yootheme-pro/joomla/developers-child-themes) in your YOOtheme Pro installation and activate the child theme
@@ -47,6 +51,7 @@ The progress bar color can be set in the Page Builder at _STYLE > Progress > BAR
 - [Counter Element](https://github.com/forrestkirby/counter-element)
 - [Flipcard Element](https://github.com/forrestkirby/flipcard-element)
 - [Image Comparison Element](https://github.com/forrestkirby/image-comparison-element)
+- [Herzog Dupont for YOOtheme Pro (Joomla!)](https://github.com/forrestkirby/herzogdupont-joomla)
 
 ## Screenshots
 
