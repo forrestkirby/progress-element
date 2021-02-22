@@ -51,7 +51,7 @@ The progress bar color can be set in the Page Builder at _STYLE > Progress > BAR
 - [Counter Element](https://github.com/forrestkirby/counter-element)
 - [Flipcard Element](https://github.com/forrestkirby/flipcard-element)
 - [Image Comparison Element](https://github.com/forrestkirby/image-comparison-element)
-- [Herzog Dupont for YOOtheme Pro (Joomla!)](https://github.com/forrestkirby/herzogdupont-joomla)
+- [Herzog Dupont Joomla! Plugin](https://github.com/forrestkirby/herzogdupont-joomla)
 
 ## Screenshots
 
