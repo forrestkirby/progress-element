@@ -1,5 +1,7 @@
 <?php
 
+/* Progress Element Copyright (C) 2018–2021 Thomas Weidlich GNU GPL v3 */
+
 $uniqid = false;
 
 if ($props['progress_value_color'] || $props['progress_background_color'])

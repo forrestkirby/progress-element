@@ -1,3 +1,5 @@
+/* Progress Element Copyright (C) 2018–2021 Thomas Weidlich GNU GPL v3 */
+
 UIkit.util.ready(() => {
 
 	UIkit.util.$$('.hd-progess progress').forEach(bar => {
