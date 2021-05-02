@@ -1,5 +1,23 @@
 # Progress Element Changelog
 
+## 2.4.12
+
+### Added
+
+- color options
+
+### Changed
+
+- rename `value` field to `start`
+
+### Fixed
+
+- render empty `<div>` if content field is empty
+
+### Removed
+
+- obsolete margin classes
+
 ## 2.2.0
 
 ### Fixed

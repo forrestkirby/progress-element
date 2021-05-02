@@ -1,5 +1,10 @@
 <?php
 
+$uniqid = false;
+
+if ($props['progress_value_color'] || $props['progress_background_color'])
+	$uniqid = uniqid('hd-progress-');
+
 $el = $this->el('div', [
 
 	'class' => [
@@ -8,14 +13,76 @@ $el = $this->el('div', [
 
 ]);
 
+$progress = $this->el('progress', [
+
+	'id' => [
+		$uniqid => $uniqid,
+	],
+
+	'class' => [
+		'uk-progress',
+	],
+
+	'value' => [
+		'{start}',
+	],
+
+	'max' => [
+		'{max}',
+	],
+
+	'data-stop' => [
+		'{stop}',
+	],
+
+	'data-step' => [
+		'{animation_step}',
+	],
+
+	'data-speed' => [
+		'{animation_speed}',
+	]
+
+]);
+
 ?>
 
 <?= $el($props, $attrs) ?>
 
-	<div class="uk-margin"><?= $props['content'] ?></div>
+	<? if ($uniqid) : ?>
+	<style>
+	<? if ($props['progress_value_color']) : ?>
+	#<?= $uniqid ?>.uk-progress::-webkit-progress-value {
+		background-color: <?= $props['progress_value_color'] ?>;
+	}
 
-	<div class="uk-margin">
-		<progress class="uk-progress" value="<?= $props['value'] ?>" max="<?= $props['max'] ?>" data-stop="<?= $props['stop'] ?>" data-step="<?= $props['animation_step'] ?>" data-speed="<?= $props['animation_speed'] ?>"><?= $props['stop'] ?>/<?= $props['max'] ?></progress>
-	</div>
+	#<?= $uniqid ?>.uk-progress::-moz-progress-bar {
+		background-color: <?= $props['progress_value_color'] ?>;
+	}
+
+	#<?= $uniqid ?>.uk-progress::-ms-fill {
+		background-color: <?= $props['progress_value_color'] ?>;
+	}
+	<? endif ?>
+
+	<? if ($props['progress_background_color']) : ?>
+	#<?= $uniqid ?>.uk-progress {
+		background-color: <?= $props['progress_background_color'] ?>;
+	}
+
+	#<?= $uniqid ?>.uk-progress::-webkit-progress-bar {
+		background-color: <?= $props['progress_background_color'] ?>;
+	}
+	<? endif ?>
+	</style>
+	<? endif ?>
+
+	<? if ($props['content']) : ?>
+	<div><?= $props['content'] ?></div>
+	<? endif ?>
+
+	<?= $progress($props) ?>
+		<?= $props['stop'] ?>/<?= $props['max'] ?>
+	<?= $progress->end() ?>
 
 </div>
