@@ -1,4 +1,4 @@
-/* Progress Element Copyright (C) 2018–2021 Thomas Weidlich GNU GPL v3 */
+/* Herzog Dupont Copyright (C) 2018–2021 Thomas Weidlich GNU GPL v3 */
 
 UIkit.util.ready(() => {
 
