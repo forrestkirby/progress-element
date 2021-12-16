@@ -1,5 +1,7 @@
 # Progress Element
 
+*Deprecated*: All custom elements are also included in repo for the Joomla! Plugin. This repo will eventually be archived.
+
 A custom element for the YOOtheme Pro Page Builder to render the UIkit 3 [Progress component](https://getuikit.com/docs/progress).
 
 Copyright (C) 2007–2021 YOOtheme GmbH yootheme.com, 2018–2021 forrestkirby github.com/forrestkirby
